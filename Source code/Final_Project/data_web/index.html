@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SmartFarm - Dieu khien cuc bo</title>
+    <link rel="stylesheet" href="/css/relay.css">
+</head>
+
+<body>
+    <main class="window">
+        <div class="browser-bar"><span></span><span></span><b>SmartFarm - Điều khiển cục bộ</b><i>×</i></div>
+        <div class="address">http://192.168.4.1</div>
+        <section class="content">
+            <h1>SmartFarm - Điều khiển cục bộ</h1>
+            <h2>Trạng thái cảm biến</h2>
+            <div class="readings">
+                <div>Nhiệt độ: <strong id="temperature">--</strong>°C</div>
+                <div>Độ ẩm KK: <strong id="humidity">--</strong>%</div>
+                <div>Độ ẩm đất: <strong id="soil">--</strong>%</div>
+                <div>Ánh sáng: <strong id="light">--</strong>%</div>
+            </div>
+            <fieldset>
+                <legend>Điều khiển thiết bị</legend>
+                <label class="switch-row"><input type="checkbox" id="pump"><span class="switch"></span><span>Bơm tưới (Manual)</span></label>
+                <label class="switch-row"><input type="checkbox" id="led"><span class="switch"></span><span>Đèn LED (Manual)</span></label>
+                <label class="switch-row"><input type="checkbox" id="mode"><span class="switch"></span><span>Chế độ: <b id="modeText">AUTO</b>/MANUAL</span></label>
+                <label class="switch-row"><input type="checkbox" id="alarm"><span class="switch"></span><span>Âm thanh cảnh báo: ON/OFF</span></label>
+            </fieldset>
+            <p class="updated">Cập nhật lần cuối: <span id="updated">đang kết nối...</span></p>
+        </section>
+    </main>
+    <script src="/js/relay.js"></script>
+</body>
+
+</html>
